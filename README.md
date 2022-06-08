@@ -1,11 +1,11 @@
-Describe: vowelCounter():
+Describe: vowelRecognizer():
 
 Test: "It will recognize a single vowel."
-Code: vowelCounter("a")
+Code: vowelRecognizer("a")
 Expected Output: "a"
 
 Test: "It will recognize a single consonant."
-Code: consonantCounter("b")
+Code: consonantRecognizer("b")
 Expected Output: "b"
 
 Test: "It will add 'way' to the end of words that begin with a vowel."
@@ -16,6 +16,6 @@ Test: "It will move move the first consecutive consenants to the end and add 'ay
 Code: pigLatin("code");
 Expected Output: "odecay"
 
-Test: "If the consonant equals q, it will move the second letter to the end with it and add 'ay'."
+Test: "If the last consonant to be taken from the front of the word equals q, it will move the following letter to the end with it and add 'ay'."
 Code: pigLatin("quick");
 Expected Output: "ickquay"
